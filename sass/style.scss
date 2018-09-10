@@ -12,6 +12,7 @@ body {
     font-family: 'Arial';
 }
 main {
+    margin: 0, auto;
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -52,14 +53,18 @@ main {
         color: $white;
         .trigger {
             margin: 10px;
-            width: 300px;
+            width: 350px;
             height: 50px;
             border-radius: 15px;
             border: 1px, solid, $white;
             background-color: $twitter;
             color: $white;
+            font-size: 20px;
         }
         a {
+            width: 350px;
+            height: 50px;
+            border-radius: 15px;
             margin: 10px;
             border: 1px, solid, $white;
             color: $white;
