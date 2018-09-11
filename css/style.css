@@ -72,10 +72,14 @@ main .buttons .trigger {
 }
 
 main .buttons a {
+  width: 350px;
+  height: 50px;
+  border-radius: 15px;
   margin: 10px;
   border: 1px, solid, #fafafa;
   color: #fafafa;
   text-decoration: none;
+  text-align: center;
 }
 
 main .buttons a .fa-twitter {
