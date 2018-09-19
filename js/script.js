@@ -4,9 +4,12 @@ var prefix = "https://cors-anywhere.herokuapp.com/";
 // zmienne z adresami URL — pierwszy do wysyłania tweetów, drugi do pobierania cytatów
 var tweetLink = "https://twitter.com/intent/tweet?text=";
 var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1";
+var button = document.querySelector('.trigger');
 
 // funkcja do pobierania losowych cytatów za pomocą API
 function getQuote() {
+
+    button.disabled = true;
 
     fetch(prefix + quoteUrl, { cache: "no-store" })
         .then(function(resp) {
@@ -38,6 +41,7 @@ function createTweet(input) {
         getQuote();
 
     } else { //jeśli długość tweeta jest prawidłowa, pokazujemy cytat użytkownikowi i podpinamy pod link, który zajmie się generowaniem tweeta 
+        button.disabled = false;
         var tweet = tweetLink + encodeURIComponent(tweetText); //zmienna tweet to złożenie dwóch elementów: linka do generowania nowych tweetów oraz samego tekstu tweeta
         document.querySelector('.quote').innerText = quoteText; //element, w którym wyświetlamy treść naszego cytatu
         document.querySelector('.author').innerText = "Author: " + quoteAuthor; //element, w którym pokazujemy autora cytatu
@@ -51,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     getQuote();
 
-    document.querySelector('.trigger').addEventListener('click', function() {
+    button.addEventListener('click', function() {
         
         getQuote();
 
