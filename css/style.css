@@ -1,90 +1,25 @@
 @charset "UTF-8";
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 /* zmienne dla kolorów */
-body {
-  margin: 0, auto;
-  width: 100%;
-  max-width: 1200px;
-  font-family: 'Arial';
-}
+body { margin: 0, auto; width: 100%; max-width: 1200px; font-family: 'Arial'; }
 
-main {
-  margin: 0, auto;
-  height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-between;
-  background-color: #1da1f2;
-}
+main { margin: 0, auto; height: 100vh; display: -ms-flexbox; display: flex; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: justify; align-content: space-between; background-color: #1da1f2; }
 
-main header {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-  color: #fafafa;
-}
+main header { display: -ms-flexbox; display: flex; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: distribute; align-content: space-around; color: #fafafa; }
 
-main header h1 {
-  color: #fafafa;
-}
+main header h1 { color: #fafafa; }
 
-main .box {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-}
+main .box { display: -ms-flexbox; display: flex; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: distribute; align-content: space-around; }
 
-main .box h2 {
-  color: #fafafa;
-}
+main .box h2 { color: #fafafa; }
 
-main .box h3 {
-  color: #fafafa;
-}
+main .box h3 { color: #fafafa; }
 
-main .buttons {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-  color: #fafafa;
-}
+main .buttons { display: -ms-flexbox; display: flex; -ms-flex-flow: column nowrap; flex-flow: column nowrap; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: distribute; align-content: space-around; color: #fafafa; }
 
-main .buttons .trigger {
-  margin: 10px;
-  width: 350px;
-  height: 50px;
-  border-radius: 15px;
-  border: 1px, solid, #fafafa;
-  background-color: #1da1f2;
-  color: #fafafa;
-  font-size: 20px;
-}
+main .buttons .trigger { margin: 10px; width: 350px; height: 50px; border-radius: 15px; border: 1px, solid, #fafafa; background-color: #1da1f2; color: #fafafa; font-size: 20px; }
 
-main .buttons a {
-  width: 350px;
-  height: 50px;
-  border-radius: 15px;
-  margin: 10px;
-  border: 1px, solid, #fafafa;
-  color: #fafafa;
-  text-decoration: none;
-  text-align: center;
-}
+main .buttons a { width: 350px; height: 50px; border-radius: 15px; margin: 10px; border: 1px, solid, #fafafa; color: #fafafa; text-decoration: none; text-align: center; }
 
-main .buttons a .fa-twitter {
-  color: #fafafa;
-  font-size: 20px;
-}
-
-/*# sourceMappingURL=style.css.map */
+main .buttons a .fa-twitter { color: #fafafa; font-size: 20px; }
